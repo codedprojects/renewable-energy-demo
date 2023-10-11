@@ -1,0 +1,2794 @@
+/*------/ RENEWABLE ENERGY SITE /-------*/
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+html, body{
+    min-height: 100vh;
+    height: 100vh !important;
+}
+
+
+body {
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   background-color: #fbfbfb;
+
+   animation: fadeInAnimation ease .5s;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+
+    font-family: proxima-nova, sans-serif !important;
+}
+
+/*custom scrollbar*/
+/* Firefox */
+* {
+scrollbar-width: auto;
+scrollbar-color: #949494 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+width: 12px;
+height: 12px;
+}
+
+*::-webkit-scrollbar-track {
+background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+background-color: #949494;
+border-radius: 10px;
+border: 3px solid #ffffff;
+}
+
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+
+ @-webkit-keyframes smoothDisplay {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*body loader*/
+.overlay{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999 !important;
+    background: rgba(255,255,255,0.5) url("../images/loader2.gif") center no-repeat;
+
+}
+
+body.loading{
+    overflow: hidden;   
+}
+
+body.loading .overlay{
+    display: block;
+}
+
+/*---------------/ Footer /----------------*/
+footer{
+  position: relative;
+  background-image: url('../images/footer-bg.jpg'),
+  linear-gradient(rgba(255,255,255,.5),rgba(0,0,0,.9));
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 668.06px;
+}
+
+.footer-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.renewable-energy-footer-brand-box{
+    padding: 40px 20px 0;
+    height:220px;
+    display: flex;
+    justify-content: center;
+}
+
+.renewable-energy-footer-brand{
+    height: 175px;
+    max-width: 490.86px;
+}
+
+.renewable-energy-footer-logo {
+    background: rgba(255,255,255,.8);
+}
+
+
+.social-links{
+    color: #fff;
+    font-size: 1.125rem;
+    margin: 1rem 0 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.social-links-logo{
+    height: 32px;
+    margin: 0 0.3rem;
+}
+
+.social-links-logo:hover{
+    cursor: pointer;
+}
+
+.footer-copyright{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: .8125rem;
+    margin-bottom: 4.5rem;
+}
+
+ul.footer-copyright > li:hover {
+    cursor: pointer;
+}
+
+/*---------------/ Main /-------*/
+
+header {
+    position: relative;
+}
+
+.green-accent{
+    color:#1C9647;
+}
+
+.gray-accent{
+     color:#38383A;
+}
+
+.emphasize{
+    font-weight: 600;
+}
+
+.italic{
+    font-style: italic;
+}
+/*---------------/ Navbar /----------------*/
+#renewable-energy-navbar{
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+     
+    background: rgba(255,255,255,1);
+    height: 72.56px;
+    padding: 0 20px 0;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+.renewable-energy-brand{
+    height: 97px;
+    max-width: 272.08px;
+}
+
+.renewable-energy-logo {
+/*    background: rgba(255,255,255,.9);*/
+}
+
+#renewable-energy-burger-menu{
+    border-radius: 0;
+    border-width: 0;
+    color: #000;
+    --bs-navbar-toggler-focus-width: 0;
+}
+
+#renewable-energy-navMenuCollapse > ul{
+    list-style: none;
+    padding-left: 0;
+
+/*    margin-top: 0.4rem;*/    
+}
+
+#renewable-energy-navMenuCollapse > ul > li{
+    cursor: pointer;
+}
+
+
+#renewable-energy-navMenuCollapse > ul > li{
+    border-bottom: .1rem solid rgba(0,0,0,.2);
+}
+
+#renewable-energy-navMenuCollapse > ul > li:first-child{
+    border-top: .1rem solid rgba(0,0,0,.2);
+}
+
+#renewable-energy-navMenuCollapse > ul > li.nav-item > a, 
+#renewable-energy-navMenuCollapse > ul > li.nav-item > div{
+    color: #333;;
+    padding: 12px 15px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+ 
+ 
+
+/*---------------/ Header /----------------*/
+.header-cover {
+    overflow: hidden;
+}
+
+.header-cover-video-box{
+   position: relative;
+   height: 747px;
+}
+
+.header-cover-video{
+    position: absolute;
+    max-width: 100%;
+}
+
+.header-cover-title-box{
+    position: absolute;
+    bottom: 22rem;
+    padding: 0 .5rem;
+}
+
+
+
+.header-cover-pic {
+  animation-name: scale-bg;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;  
+  background-image: url('../images/renewable-energy-header-homepic.jpeg'),
+  linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.8));
+  background-blend-mode: overlay;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 900px;
+  transition: background-image .5s;
+}
+
+@keyframes scale-bg {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+}
+
+.header-cover-title{
+    color: #fff;
+    font-size: 2.375rem;
+    letter-spacing: 4px;
+    line-height: 1.3;
+    font-weight: 700;
+    text-shadow: 2px 7px 5px rgba(0,0,0,.1), 0px -4px 10px rgba(255,255,255,0);
+  /*  animation: 4s slide-right .1s forwards;
+    transform:translateX(-120%);*/
+}
+
+
+@keyframes slide-right {
+  to {
+    transform:translateX(0%);
+  }
+}
+
+/*---------------/ Home /----------------*/
+
+.main-renewable-energy-container{}
+
+
+/*about us*/
+.about-us{
+    background: #f3f3f3;
+    height: 567px;
+    padding: 50px 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.about-us-box{
+    flex: 0 0 auto;
+    width: 100%;
+    display: flex;
+}
+
+.about-us-img-box{
+    flex: 0 0 auto;
+    width: 40%;
+    height: 350px;
+}
+
+.about-us-img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.about-us-content-box{
+   padding: 1.625rem 0 0 2.5rem;
+}
+
+.about-us-title-head, .about-us-ptext {
+    letter-spacing: 2px;
+}
+
+.about-us-title-head{
+    font-size: 1.625rem;
+    font-weight: 600;
+}
+
+.about-us-ptext{
+    min-height: 200px;
+    font-size: 1.125rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/*renewable-energy-category*/
+.renewable-hydro{
+   background-image: url('../images/renewable-hydro.jpg'),
+   linear-gradient(rgba(36,37,42,.9),rgba(36,37,42,.9));
+   background-blend-mode: overlay;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   background-position: center 75%;
+   background-repeat: no-repeat;
+   height: 555px;
+   display: flex;
+   align-items: center;
+}
+
+.renewable-hydro-box{
+   flex: 0 0 auto;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   max-width: 89%;
+   margin: 0 auto;
+}
+
+.renewable-hydro-img-box{
+    flex: 0 0 auto;
+    width: 40%;
+    height: 350px;
+}
+
+.renewable-hydro-img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.renewable-hydro-content-box{
+    flex: 0 0 auto;
+    width: 60%;
+    min-height: 350px;
+}
+
+.renewable-hydro-content{
+    color: #fff;
+    background: rgb(25, 105, 35);
+    padding: 1.25rem;
+    border-radius: .5rem;
+}
+
+.renewable-hydro-content.content-1{
+    margin-top: .5rem;
+    background: rgb(30, 139, 195);
+}
+
+.renewable-hydro-content.content-2{
+    margin-top: 1rem;
+    background: rgb(72, 113, 247);
+}
+
+.renewable-hydro-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+}
+
+.renewable-hydro-ptext {
+    letter-spacing: 2px;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+
+/*------------------*/
+
+.readmore-text {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.social-proof.proof1{
+    background: linear-gradient(rgba(0,0,0,.965),rgba(0,0,0,1));
+}
+
+
+.social-proof.proof2{
+    background: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,.9));
+    padding-bottom: 13%;
+}
+
+
+
+
+.social-proof-content{
+    max-width: 1040px;
+    margin:0 auto;
+    padding: 0 20px;
+    text-align: center;
+    
+}
+
+.social-proof.proof1 > .social-proof-content{
+    color: #fff;
+}
+
+.social-proof.proof2 > .social-proof-content{
+    color: #fff;
+}
+
+
+.social-proof-content-2cols{
+    flex: 0 0 auto;
+    width: 50%;
+/*    padding: 90px 20px;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+.info-graphics-proof{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info-graphics-proof{
+    background: #fff;
+    min-height: 397px;
+}
+
+.info-graphics-proof-content-2cols{
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.info-graphics-proof-content-3cols{
+    flex: 0 0 auto;
+    width: 33.333%;
+}
+
+.info-graphics-proof-content-box{
+    position: absolute;
+    top: -100px;
+    padding: 0 20px;
+    width: inherit;
+
+}
+
+.info-graphics-proof-content{
+    position: relative;
+    margin:0 auto;
+    padding: 0 20px;
+    text-align: center;
+    
+}
+
+.info-graphics-proof-img-box{
+    height: 215px;
+}
+
+.info-graphics-proof-img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.info-graphics-proof-content-text-box{
+    padding: 0 20px;
+}
+
+.info-graphics-proof-title, .info-graphics-proof-ptext {
+    letter-spacing: 2px;
+}
+
+.info-graphics-proof-title{
+    color: #006f8f;
+    font-weight: 700;
+}
+
+.info-graphics-proof-ptext{
+    color: rgb(77, 77, 76);
+    min-height: 95px;
+    font-size: 1.1rem;
+}
+
+/*hexagon*/
+.hexagon-box{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+/*    border: 1px solid red;*/
+}
+
+.hexagon {
+  position: relative;
+  display: inline-block;
+  margin: 0 .5rem;
+  width: 1rem;
+  height: calc(1rem * 1.732);
+  background-color: #fff;
+  transform: rotate(30deg);
+}
+
+.hexagon::before {
+  width: inherit;
+  height: inherit;
+  background-color: inherit;
+  content: "";
+  position: absolute;
+  left: 0;
+  transform: rotate(-60deg);
+}
+
+.hexagon::after {
+  width: inherit;
+  height: inherit;
+  background-color: inherit;
+  content: "";
+  position: absolute;
+  left: 0;
+  transform: rotate(60deg);
+}
+
+.ctrl-width {
+  background-color: #fff;
+  width: 12rem;
+  height: calc(12rem * 1.732);
+  margin: 0 3rem;
+}
+
+.ctrl-rounded, .ctrl-rounded::before, .ctrl-rounded::after {
+/*  border-radius: .75rem/.25rem;*/
+}
+
+
+.social-pics-proof {}
+
+.social-pics-proof-background{
+  position: relative;
+  background-image: url(../images/dam-scene.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 627.75px;
+}
+
+.social-pics-proof-pics-pad{
+    display: flex;
+}
+
+.social-pics-proof-pics-content-2cols{
+    flex: 0 0 auto;
+    width: 50%;
+    display: flex;
+}
+
+.social-pics-proof-pics-content-2cols > div {
+     padding: 1.563rem 0 1.563rem 1.563rem;
+     flex: 0 0 auto;
+     width: 100%;
+     display: flex;
+}
+
+.grid-gap{
+    padding-right: 25px;
+}
+
+.social-pics-proof-pics-box{
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.social-proof-pics{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.social-pics-proof-pics-box-1{
+/*    padding-top: 40px;*/
+    height: 273.38px;
+    width: 69.7%;
+}
+
+.social-proof-img-1{}
+
+.social-pics-proof-pics-box-2{
+    height: 273.38px;
+     width: 30.3%;
+}
+
+.social-proof-img-2{}
+
+.social-pics-proof-pics-box-3{
+    height: 571.75px;
+    width: 33.333%;
+}
+
+.social-proof-img-3{
+/*    padding-top: 50px;*/
+}
+
+.social-pics-proof-pics-box-4{
+    height: 273.38px;
+    width: 66.666%;
+}
+
+.social-proof-img-4{}
+
+.social-pics-proof-pics-box-5{
+    position: absolute;
+    top: 51.5%;
+    left: 3.6%;
+    height: 273.38px;
+    width: 48%;
+}
+
+.social-proof-img-5{}
+
+.social-pics-proof-pics-box-6{
+    position: absolute;
+    top: 51.5%;
+    right: 0;
+    height: 273.38px;
+    width: 48%;
+
+}
+
+.social-proof-img-6{
+/*    padding-bottom: 30px;*/
+}
+
+.social-proof-img-7{}
+
+.social-pics-proof-pics-box-7{
+    position: absolute;
+    top: 51.5%;
+    left: 36.5%;
+    height: 273.38px;
+    width: 41%;
+
+}
+
+.social-proof-img-8{}
+
+.social-pics-proof-pics-box-8{
+    position: absolute;
+    top: 51.5%;
+    right: 0;
+    height: 273.38px;
+    width: 23%;
+
+}
+
+.our-partners{
+    background: #f9f8f7;
+    padding: 100px 0 80px;
+    min-height: 332px;
+   
+}
+
+.our-partners-container{
+    max-width: 1180px;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    margin: 0 auto;
+}
+
+.our-partners-header > h2{
+    font-size: 2.0625rem;;
+    color: rgb(0, 111, 143);
+    margin: 0 0 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.our-partner-logo-box{
+    display: flex;
+    align-items: center;
+}
+
+
+.our-partner-logo-box-content-3cols{
+    position: relative;
+    flex: 0 0 auto;
+    width: 33.333%;
+}
+
+.our-partner-logo-box-content-2cols{
+    position: relative;
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.our-partner-logo-img-box{
+    height: 215px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-partner-logo-img{
+    border-radius: 0.8rem
+}
+
+.contact-us{
+    background: #fff;
+    padding: 100px 0 80px;
+    min-height: 332px;
+}
+
+.contact-us-container{
+    max-width: 1180px;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    margin: 0 auto;
+}
+
+.contact-us-header > h2{
+    font-size: 2.0625rem;;
+    color: rgb(0, 111, 143);
+    margin: 0 0 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.contact-us-content{
+    text-align: center;
+}
+
+.contact-us-content > p{
+    color: #4d4d4c;
+    font-size: 1rem;
+    line-height: 18px;
+}
+
+
+
+/*screen sizes*/
+
+@media only screen{
+
+    /*bootstrap xs*/
+    /*xs devices (portrait phones, less than 576px)*/
+    @media (min-width: 320px){
+
+        /*xs-screen navbar*/
+        #renewable-energy-navbar {
+          padding: 0;
+          height: 97px;
+          margin-bottom: 0;
+        }
+
+        #renewable-energy-burger-menu {
+          margin-left: 0.8rem;
+        }
+
+        #renewable-energy-navMenuCollapse{
+            flex-grow: 1;
+        }
+
+        #renewable-energy-navMenuCollapse > ul {
+            background: rgba(255,255,255,0.8);
+        }
+
+        .fa-solid.fa-chevron-down{
+            display: none;
+        }
+
+        #renewable-energy-navMenuCollapse > ul > li.nav-item > a, 
+        #renewable-energy-navMenuCollapse > ul > li.nav-item > div{
+            font-size: .9rem;
+        }
+  
+        /*xs-screen home*/
+        /*head-cover*/
+        .header-cover-title {
+            font-size: 2.3rem;
+        }
+
+        .header-cover-pic {
+          height: 640px;
+        }
+
+        .header-cover-title-box {
+          bottom: 9rem;
+        }
+
+        /*social-proof*/
+        .social-proof {
+          padding: 0;
+        }
+
+        .social-proof-content-box {
+          padding: 40px 10px;
+        }
+
+        .social-proof-title {
+          font-size: 1.2rem;
+          font-weight: 600;
+        }
+
+        .social-proof-ptext {
+          font-size: .875rem;
+          margin-bottom: 2rem;
+        }
+
+        .social-proof-video-box {
+          height: 150px;
+        }
+
+        .social-proof.proof1 > .social-proof-content {
+          max-width: 300px;
+        }
+
+        .social-proof-container {
+          display: block;
+          margin: 0 auto;
+          max-width: 300px;
+        }
+
+        .social-proof-img-box {
+          height: 150px;  
+        }
+
+        .social-proof-content-2cols {
+          width: 100%;
+        }
+
+        .social-proof.proof2 {
+          padding-bottom: 65%;
+        }
+
+        .btn-learn-more {
+          width: 60% !important;
+        }
+
+        .learnmore-text {
+          font-size: .813rem;
+        }
+
+        /*info-graphics*/
+
+        .info-graphics-proof-content-2cols, .info-graphics-proof-content-3cols {
+          width: 100%;
+        }
+
+        .info-graphics-proof-content-box {
+          left: 50%;
+          transform: translate(-50%,0);
+        }
+
+        .info-graphics-proof-content{
+            min-height: 20rem;
+        }
+
+        .hexagon-box{
+          top: -84px;
+        }
+
+        .ctrl-width {
+          width: 6rem;
+          height: calc(6rem * 1.732);
+          margin: 0 3rem;
+        }
+
+
+        .info-graphics-proof-img-box {
+          height: 165px;
+        }
+
+        .info-graphics-proof-title{
+            font-size: 1.2rem;
+        }
+
+        .info-graphics-proof-ptext {
+          font-size: 1rem;
+        }
+
+        /*social-pics-proof*/
+
+        .social-pics-proof-background {
+          height: 1219.75px;
+        }
+
+        .social-pics-proof-pics-pad {
+          flex-wrap: wrap;
+        }
+
+        .social-pics-proof-pics-content-2cols {
+          width: 100%;
+          flex: unset;
+          display: unset;
+          min-height: 595px;
+        }
+
+        .social-pics-proof-pics-content-2cols > div {
+          position: relative;  
+          flex: unset;
+          width: unset;
+        }
+
+        .social-pics-proof-pics-box-1 {
+          width: 61.6%;
+        }
+
+        .social-proof-img-2 {
+          object-position: 58%;
+        }
+
+        .social-pics-proof-pics-box-2 {
+          width: 32.8%;
+        }
+
+        .social-pics-proof-pics-box-5, .social-pics-proof-pics-box-6 {
+          top: 0.5%;
+        }
+
+        .social-pics-proof-pics-box-5 {
+          left: 5.3%;
+          width: 47%;
+        }
+
+        .social-pics-proof-pics-box-6 {
+          right: 5.5%;
+          width: 42%;
+        }
+
+
+        .social-pics-proof-pics-box-3 {
+          width: 38.333%;
+        }
+
+        .social-pics-proof-pics-box-4 {
+          width: 61.666%;
+        }
+
+        .social-pics-proof-pics-box-7, .social-pics-proof-pics-box-8 {
+          top: -607.5%;
+          height: 279.38px;
+        }
+
+        .social-pics-proof-pics-box-7 {
+          left: 43%;
+          width: 35%;
+        }
+
+        .social-proof-img-7 {
+          object-position: 63%;
+        }
+
+        /*our-partners*/
+        
+        .our-partners {
+          padding: 55px 0 80px;
+        }
+
+        .our-partners-header > h2 {
+          font-size: 1.2rem;
+        }
+
+        .our-partner-logo-box {
+          display: block;
+        }
+
+        .our-partner-logo-box-content-2cols, .our-partner-logo-box-content-3cols {
+          flex: unset;
+          width: 100%;
+        }
+
+        .our-partner-logo-img-box {
+          height: 160px;
+        }
+
+        .our-partner-logo-img {
+          max-width: 195px;
+        }
+
+        /*contact-us*/
+        
+        .contact-us-header > h2 {
+          font-size: 1.25rem;
+        }
+
+        .contact-us-content > p {
+          font-size: .875rem;
+        }
+
+        .contact-us {
+          padding: 70px 0 80px;
+        }
+
+        .btn-contact-us{
+          width: 85% !important;
+        }
+
+        /*footer*/
+        footer {
+          min-height: 370.06px;
+        }
+
+        .renewable-energy-footer-brand-box {
+          padding: 0;  
+          height: 105px;
+        }
+
+        .renewable-energy-footer-brand {
+          height: 145px;  
+          max-width: 250px;
+        }
+
+        .social-links {
+          font-size: .875rem;
+          margin: 1rem 0 2rem;
+        }
+
+        .social-links-logo {
+          height: 22px;
+
+        }
+
+        .footer-copyright {
+          display: block;
+          font-size: .55rem;
+          text-align: center;
+          margin-bottom: 2.5rem;
+        }
+
+        ul.footer-copyright > li {
+            margin-top: .5rem;
+            margin-right: 2rem;
+            margin-left: 2rem;
+        }
+                
+            /*iPhone 3G/iPhone 4 (portrait)*/
+            @media (max-width: 480px){
+
+            }
+
+            /*Samsung Galaxy S2 (portrait)*/
+            @media (max-width: 534px){
+
+            }
+
+            /*iPhone 5/iPhone SE (portrait)*/
+            @media (max-width: 568px){
+
+            }
+
+
+            /*Samsung Galaxy S3/S4 (portrait)*/
+            @media (max-width: 640px){
+
+            }
+
+    }
+
+
+    @media (min-width: 360px){
+
+        /*xs-screen home*/
+        /*head-cover*/
+        .header-cover-pic {
+          height: 640px;
+        }
+
+        .header-cover-title-box {
+          bottom: 14rem;
+        }
+
+        .header-cover-title {
+            font-size: 1.7rem;
+        }
+
+        .social-proof.proof1 > .social-proof-content {
+          max-width: 330px;
+        }
+
+        .social-proof-container {
+          display: block;
+          margin: 0 auto;
+          max-width: 330px;
+        }
+
+        .social-proof-img-box {
+          height: 150px;  
+        }
+
+
+
+        /*LG Nexus 5 (portrait)*/
+        /*Huawei Ascend P6/P7 (portrait)*/
+        @media (max-width: 592px){
+            
+        }
+
+        /*OnePlus One (portrait)*/
+        /*Samsung Galaxy S5/HTC One (portrait)*/
+        @media (max-width: 640px){
+
+        }
+
+        
+    }
+
+    
+    @media (min-width: 375px){
+
+        /*xs-screen home*/
+        /*head-cover*/
+        .header-cover-pic {
+          height: 667px;
+        }
+
+        .header-cover-title-box {
+          bottom: 14rem;
+        }
+
+        .header-cover-title {
+            font-size: 1.5rem;
+        }
+
+        .social-proof.proof1 > .social-proof-content {
+          max-width: 350px;
+        }
+
+        .social-proof-container {
+          display: block;
+          margin: 0 auto;
+          max-width: 350px;
+        }
+
+        .social-proof-img-box {
+          height: 150px;  
+        }
+
+        /*iPhone 6, 7, 8, X (portrait)*/
+        @media (max-width: 667px){
+
+        }
+
+    }
+
+    
+    @media (min-width: 384px){
+
+        /*xs-screen home*/
+        /*head-cover*/
+        .header-cover-pic {
+          height: 592px;
+        }
+
+        .header-cover-title-box {
+          bottom: 14rem;
+        }
+
+        .header-cover-title {
+            font-size: 1.5rem;
+        }
+
+        .social-proof.proof1 > .social-proof-content {
+          max-width: 400px;
+        }
+
+        .social-proof-container {
+          display: block;
+          margin: 0 auto;
+          max-width: 400px;
+        }
+
+        .social-proof-img-box {
+          height: 150px;  
+        }
+
+        /*LG Nexus 4 (portrait)*/
+        @media (max-width: 592px){
+
+        }
+    }
+
+
+    @media (min-width: 414px) {
+
+        /*xs-screen home*/
+        /*head-cover*/
+        .header-cover-pic {
+          height: 736px;
+        }
+
+        .header-cover-title-box {
+          bottom: 14rem;
+        }
+
+        .header-cover-title {
+            font-size: 1.7rem;
+        }
+
+        .social-proof.proof1 > .social-proof-content {
+          max-width: 400px;
+        }
+
+        .social-proof-container {
+          display: block;
+          margin: 0 auto;
+          max-width: 400px;
+        }
+
+        .social-proof-img-box {
+          height: 150px;  
+        }
+
+        /*iPhone 6 Plus (portrait)*/
+        @media (max-width: 736px){
+
+        }
+    }
+    
+    @media (min-width: 480px) {
+
+        /*xs-screen home*/
+        /*head-cover*/
+        .header-cover-pic {
+          height: 592px;
+        }
+
+        .header-cover-title-box {
+          bottom: 14.5rem;
+        }
+
+        .header-cover-title {
+            font-size: 1.5rem;
+        }
+
+        .social-proof-video-box {
+          height: 190px;
+        }
+
+
+        .social-proof.proof1 > .social-proof-content {
+          max-width: 450px;
+        }
+
+        .social-proof-container {
+          display: block;
+          margin: 0 auto;
+          max-width: 450px;
+        }
+
+        .social-proof-img-box {
+          height: 190px;  
+        }
+
+        .social-proof-ptext {
+          min-height: 210px;
+        }
+
+        .btn-contact-us{
+          width: 50% !important;
+        }
+
+        /*iPhone 3G/iPhone 4 (landscape)*/
+        @media (orientation: landscape){
+
+        }
+    }
+
+    @media (min-width: 481px){
+
+        /*xs-screen home*/
+        /*head-cover*/
+        .header-cover-pic {
+          height: 592px;
+        }
+
+        .header-cover-title-box {
+          bottom: 14.5rem;
+        }
+
+        .header-cover-title {
+            font-size: 1.5rem;
+        }
+
+        .social-proof.proof1 > .social-proof-content {
+          max-width: 500px;
+        }
+
+        .social-proof-container {
+          display: block;
+          margin: 0 auto;
+          max-width: 500px;
+        }
+
+        .social-proof-img-box {
+          height: 230px;  
+        }
+
+    }
+
+    
+    @media (min-width: 534px){
+
+        /*xs-screen home*/
+        /*head-cover*/
+        .header-cover-pic {
+          height: 680px;
+        }
+
+        .header-cover-title-box {
+          bottom: 14.5rem;
+        }
+
+        .header-cover-title {
+            font-size: 1.7rem;
+        }
+
+        .social-proof-video-box {
+          height: 240px;
+        }
+
+        .social-proof.proof1 > .social-proof-content {
+          max-width: 550px;
+        }
+
+        .social-proof-container {
+          display: block;
+          margin: 0 auto;
+          max-width: 550px;
+        }
+
+        .social-proof-img-box {
+          height: 240px;  
+        }
+
+        .social-proof-ptext {
+          min-height: 167px;
+        }
+
+
+        /*Samsung Galaxy S2 (landscape)*/
+        @media (orientation: landscape){
+
+        }
+    }
+
+
+    @media (min-width: 568px){
+
+         .social-proof.proof1 > .social-proof-content {
+          max-width: 550px;
+        }
+
+        .social-proof-container {
+          display: block;
+          margin: 0 auto;
+          max-width: 550px;
+        }
+
+        .social-proof-img-box {
+          height: 250px;  
+        }
+
+        /*iPhone 5/iPhone SE (landscape)*/
+        @media (orientation: landscape) {
+
+        }
+    }
+
+    /*bootstrap sm*/
+    /*sm devices (landscape phones, 576px and up*/
+    @media (min-width: 576px) {
+
+        .social-proof.proof1 > .social-proof-content {
+          max-width: 550px;
+        }
+
+        .social-proof-container {
+          display: block;
+          margin: 0 auto;
+          max-width: 550px;
+        }
+
+        .social-proof-img-box {
+          height: 250px;  
+        }
+
+    }
+
+    
+    @media (min-width: 592px){
+
+        /*xs-screen home*/
+        .social-pics-proof-pics-box-2 {
+          width: 33.8%;
+        }
+
+        .social-proof-video-box {
+            height: 260px;
+        }
+
+        .social-proof.proof1 > .social-proof-content {
+          max-width: 550px;
+        }
+
+        .social-proof-container {
+          display: block;
+          margin: 0 auto;
+          max-width: 550px;
+        }
+
+        .social-proof-img-box {
+          height: 260px;  
+        }
+
+        .social-proof.proof2 {
+          padding-bottom: 40%;
+        }
+
+        .social-pics-proof-pics-box-5 {
+          left: 4.3%;
+          width: 48%;
+        }
+
+        .social-pics-proof-pics-box-6 {
+          right: 4.5%;
+          width: 42%;
+        }
+
+        .social-pics-proof-pics-box-7 {
+          left: 41%;
+          width: 35%;
+        }
+
+
+        /*Huawei Ascend P6/P7 (landscape)*/
+        /*LG Nexus 4/LG Nexus 5 (landscape)*/
+        @media (orientation: landscape){
+
+        }
+
+    }
+
+    
+    @media (min-width: 601px){
+
+        .social-proof.proof1 > .social-proof-content {
+          max-width: 550px;
+        }
+
+        .social-proof-container {
+          display: block;
+          margin: 0 auto;
+          max-width: 550px;
+        }
+
+        .social-proof-img-box {
+          height: 270px;  
+        }
+
+        .btn-contact-us{
+          width: 40% !important;
+        }
+
+        /*Asus Nexus 7 (portrait)*/
+        @media (max-width: 906px){
+
+        }
+    }
+
+    @media (min-width: 640px){
+
+        /*xs-screen home*/
+        .social-proof-video-box {
+            height: 280px;
+        }
+
+        .social-proof.proof1 > .social-proof-content {
+          max-width: 550px;
+        }
+
+        .social-proof-container {
+          display: block;
+          margin: 0 auto;
+          max-width: 550px;
+        }
+
+        .social-proof-img-box {
+          height: 280px;  
+        }
+
+        /*Samsung Galaxy S3/S4 (landscape)*/
+        @media (orientation: landscape){
+
+        }
+
+        /*OnePlus One (landscape)*/
+        @media (orientation: landscape){
+
+        }
+
+        /*Samsung Galaxy S5/HTC One (landscape)*/
+        @media (orientation: landscape){
+
+        }
+    }
+
+   
+    @media (min-width: 667px) {
+
+        .social-proof.proof1 > .social-proof-content {
+          max-width: 600px;
+        }
+
+        .social-proof-container {
+          display: block;
+          margin: 0 auto;
+          max-width: 600px;
+        }
+
+        .social-proof-img-box {
+          height: 250px;  
+        }
+
+        /*xs-screen home*/
+        .social-proof-video-box {
+          height: 340px;
+        }
+
+        .btn-contact-us{
+          width: 35% !important;
+        }
+
+         /*iPhone 6, 7, 8, X (landscape)*/
+        @media (orientation: landscape){
+
+         }
+    }
+
+   
+    @media (min-width: 736px){
+
+        .social-proof-video {
+            max-width: 640px;
+        }
+
+        .social-proof.proof1 > .social-proof-content {
+          max-width: 700px;
+        }
+
+        .social-proof-container {
+          display: block;
+          margin: 0 auto;
+          max-width: 700px;
+        }
+
+        .social-proof-img-box {
+          height: 250px;  
+        }
+        
+
+        .social-pics-proof-pics-box-2 {
+          width: 34.8%;
+        }
+
+        .social-pics-proof-pics-box-5 {
+          left: 3.3%;
+          width: 48.5%;
+        }
+
+        .social-pics-proof-pics-box-6 {
+          right: 3.5%;
+          width: 44%;
+        }
+
+        .social-pics-proof-pics-box-7 {
+          left: 40.5%;
+          width: 36%;
+        }
+
+        /*iPhone 6 Plus (landscape)*/
+        @media (orientation: landscape){
+
+        }
+    }
+
+    /*bootstrap md*/
+    /*md devices (tablets, 768px and up)*/
+    @media (min-width: 768px) {
+
+        .social-proof.proof1 > .social-proof-content {
+          max-width: 700px;
+        }
+
+        .social-proof-container {
+          display: block;
+          margin: 0 auto;
+          max-width: 700px;
+        }
+
+        .social-proof-img-box {
+          height: 250px;
+        }
+
+        .our-partner-logo-box {
+          display: flex;
+        }
+
+        .our-partner-logo-box-content-3cols {
+          flex: 0 0 auto;
+          width: 33.333%;
+        }
+
+
+        .our-partner-logo-box-content-2cols {
+          flex: 0 0 auto;
+          width: 50%;
+        }
+
+        .our-partner-logo-img {
+          max-width: 70%;
+        }
+
+        .btn-contact-us {
+          width: 30% !important;
+        }
+
+            /*iPad 1 and 2/iPad Air, 
+            iPad Mini, iPad Pro 9,
+            iPad 3 and 4 (portrait)*/
+            @media (max-width: 1024px){
+
+            }
+    }
+   
+    @media (min-width: 834px){
+
+
+        /*iPad Pro 10 (portrait)*/
+        @media (max-width: 1112px){
+
+        }
+    }
+
+    
+    @media (min-width: 906px){
+
+        .social-pics-proof-pics-box-2 {
+          width: 35.5%;
+        }
+
+        .social-pics-proof-pics-box-5 {
+          left: 3%;
+          width: 49.5%;
+        }
+
+        .social-pics-proof-pics-box-6 {
+          right: 3%;
+          width: 44%;
+        }
+
+        /*Asus Nexus 7 (landscape)*/
+        @media (orientation: landscape){
+
+        }
+    }
+
+
+
+    /*bootstrap lg*/
+    /*lg devices (desktops, 992px and up)*/
+    @media (min-width: 992px) {
+
+        /*lg-screen navbar*/
+        #renewable-energy-burger-menu {
+          margin-left: 0;
+        }
+
+        #renewable-energy-navMenuCollapse > ul {
+            background: unset;
+        }
+
+        #renewable-energy-navMenuCollapse > ul > li{
+            border-bottom: unset;
+        }
+
+        #renewable-energy-navMenuCollapse > ul > li:first-child{
+            border-top: unset;
+        }
+
+        .fa-solid.fa-chevron-down{
+            display: inline-block;
+        }
+
+        /*lg-screen navbar*/
+        #renewable-energy-navMenuCollapse > ul > li.nav-item > a {
+          font-size: .75rem;
+          font-weight: 600;
+        }
+
+        #renewable-energy-navMenuCollapse{
+            flex-grow: 0;
+        }
+
+        .renewable-energy-brand {
+          max-width: 200.08px;
+        }
+
+        /*lg-screen main*/
+        
+        /*lg-screen home*/
+        .header-cover-pic {
+          height: 900px;
+        }
+
+        .header-cover-title-box {
+          bottom: 22rem;
+        }
+
+        .header-cover-title {
+          font-size: 2.375rem;
+        }
+
+        /*social-proof*/
+        .social-proof {
+          padding: 0;
+        }
+
+        .social-proof-container{
+             display: flex;
+            max-width: 885px;
+        }
+        
+        .social-proof-content-box {
+          padding: 40px 20px;
+        }
+
+        .social-proof.proof1 > .social-proof-content {
+          max-width: 885px;
+        }
+
+        .social-proof-title {
+          font-size: 1.2rem;
+          font-weight: 600;
+          margin-top: 2.5rem;
+        }
+
+        .social-proof-ptext {
+          min-height: 207px;
+          font-size: .875rem;
+        }
+
+        .social-proof-video-box {
+          height: 370.5px;
+        }
+
+        .social-proof-content-2cols {
+          flex: 0 0 auto;  
+          width: 50%;
+          padding: 0 20px;
+        }
+
+        .social-proof.proof2 {
+          padding-bottom: 15%;
+        }
+
+        .social-proof-img-box {
+          height: 185px;
+        }
+
+        .btn-learn-more {
+          width: 60% !important;
+        }
+
+        .learnmore-text {
+          font-size: .813rem;
+        }
+
+        /*info-graphics*/
+
+        .info-graphics-proof-content-2cols{
+          width: 50%;  
+        } 
+
+        .info-graphics-proof-content-3cols {
+          width: 33.333%;
+        }
+
+        .info-graphics-proof-content-box {
+          width: 100%;
+          top: -64px;
+          left: 50%;
+          transform: translate(-50%,0);
+        }
+
+        .info-graphics-proof-content{
+            min-height: 20rem;
+        }
+
+        .hexagon-box{
+          top: -84px;
+        }
+
+        .ctrl-width {
+          width: 7.5rem;
+          height: calc(7.5rem * 1.732);
+          margin: 0 3rem;
+        }
+
+
+        .info-graphics-proof-img-box {
+          height: 165px;
+        }
+
+        .info-graphics-proof-title{
+            font-size: 1.2rem;
+        }
+
+        .info-graphics-proof-ptext {
+          font-size: 1rem;
+        }
+
+        /*social-pics-proof*/
+
+        .social-pics-proof-background {
+          min-height: 627.75px;
+          height: 627.75px;
+        }
+
+        .social-pics-proof-pics-pad {
+          flex-wrap: wrap;
+        }
+
+        .social-pics-proof-pics-content-2cols {
+           flex: 0 0 auto;
+           width: 50%;
+        }
+
+        .social-pics-proof-pics-content-2cols > div {
+          padding: 1.563rem 0 1.563rem 1.563rem;
+          flex: 0 0 auto;
+          width: 100%;
+          display: flex;
+        }
+
+        .social-pics-proof-pics-box-1 {
+          width: 64.5%;
+        }
+
+        .social-proof-img-2 {
+          object-position: 58%;
+        }
+
+        .social-pics-proof-pics-box-5, .social-pics-proof-pics-box-6 {
+          top: 0.5%;
+        }
+
+        .social-pics-proof-pics-box-5 {
+          left: 5%;
+          width: 48%;
+        }
+
+        .social-pics-proof-pics-box-6 {
+          right: 0;
+          width: 47%;
+        }
+
+
+        .social-pics-proof-pics-box-3 {
+          width: 38.333%;
+        }
+
+        .social-pics-proof-pics-box-4 {
+          width: 61.666%;
+        }
+
+        .social-pics-proof-pics-box-7, .social-pics-proof-pics-box-8 {
+          top: -607.5%;
+          height: 279.38px;
+        }
+
+        .social-pics-proof-pics-box-7 {
+          left: 41.5%;
+          width: 36%;
+        }
+
+        .social-proof-img-7 {
+          object-position: 63%;
+        }
+
+        /*our-partners*/
+        
+        .our-partners {
+          padding: 55px 0 80px;
+        }
+
+        .our-partners-header > h2 {
+          font-size: 1.2rem;
+        }
+
+        .our-partner-logo-box-content-3cols {
+          flex: 0 0 auto;
+          width: 33.333%;
+        }
+
+
+        .our-partner-logo-box-content-2cols {
+          flex: 0 0 auto;
+          width: 50%;
+        }
+
+        .our-partner-logo-img-box {
+          height: 160px;
+        }
+
+        /*contact-us*/
+        
+        .contact-us-header > h2 {
+          font-size: 1.25rem;
+        }
+
+        .contact-us-content > p {
+          font-size: .875rem;
+        }
+
+        .contact-us {
+          padding: 70px 0 80px;
+        }
+
+        .btn-contact-us{
+          width: 20% !important;
+        }
+
+        /*footer*/
+        footer {
+          min-height: 370.06px;
+        }
+
+        .renewable-energy-footer-brand-box {
+          padding: 0;  
+          height: 105px;
+        }
+
+        .renewable-energy-footer-brand {
+          height: 145px;  
+          max-width: 250px;
+        }
+
+        .social-links {
+          font-size: .875rem;
+          margin: 1rem 0 2rem;
+        }
+
+        .social-links-logo {
+          height: 22px;
+
+        }
+
+        .footer-copyright {
+          display: flex;
+          font-size: .55rem;
+          text-align: center;
+          margin-bottom: 2.5rem;
+        }
+
+        ul.footer-copyright > li {
+            margin-top: .5rem;
+            margin-right: 1rem;
+            margin-left: 1rem;
+        }
+
+
+
+  
+    }
+
+    
+    @media (min-width: 1024px){
+
+        /*lg-screen navbar*/
+        #renewable-energy-navMenuCollapse > ul > li.nav-item > a{
+            font-size: .78rem;
+        }
+
+        .social-proof.proof1 > .social-proof-content {
+          max-width: 885px;
+        }
+
+        .social-proof-container{
+            max-width: 945px;
+        }
+
+        .social-pics-proof-pics-box-1 {
+          width: 64.7%;
+        }
+
+        /*iPad Pro 12 (portrait)*/
+        @media (max-width: 1112px){
+
+        }
+
+        /*iPad 1 and 2/iPad Air, 
+        iPad Mini, iPad Pro 9',
+        iPad 3 and 4 (landscape)*/
+        @media (orientation: landscape){
+
+        }
+    }
+
+
+    
+    @media (min-width: 1112px){
+
+        .social-proof.proof1 > .social-proof-content {
+          max-width: 995px;
+        }
+
+        .social-proof-container{
+            max-width: 995px;
+        }
+
+        /*iPad Pro 10 (landscape)*/
+        @media (orientation: landscape){
+
+        }
+
+    }
+
+    /*bootstrap xl*/
+    /*xl devices (large desktops, 1200px and up)*/
+    @media (min-width: 1200px) {
+
+        /*xl-screen navbar*/
+        #renewable-energy-navbar {
+          padding: 0 1.25rem 0;
+          height: 97px;
+          margin-bottom: 0;
+        }
+
+        .renewable-energy-brand {
+          max-width: 240.08px;
+        }
+
+        #renewable-energy-navMenuCollapse > ul > li.nav-item > a{
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        /*lg-screen main*/
+        
+        /*lg-screen home*/
+        .header-cover-pic {
+          height: 900px;
+        }
+
+        .header-cover-title-box {
+          bottom: 22rem;
+        }
+
+        .header-cover-title {
+          font-size: 2.375rem;
+        }
+
+        /*about-us*/
+        .readmore-text {
+          font-size: 1rem;
+        }
+
+        /*social-proof*/
+        .social-proof {
+          padding: 0;
+        }
+
+        .social-proof.proof1 > .social-proof-content {
+           max-width: 1087px;
+        }
+
+        .social-proof-container{
+           max-width: 1087px;
+        }
+
+        .social-proof-content-box {
+          padding: 40px 20px;
+        }
+
+        .social-proof.proof1 > .social-proof-content {
+          max-width: 1040px;
+        }
+
+        .social-proof-title {
+          font-size: 1.2rem;
+          font-weight: 600;
+          margin-top: 2.5rem;
+        }
+
+        .social-proof-ptext {
+          min-height: 167px;
+          font-size: 1rem;
+        }
+
+        .social-proof-video-box {
+          height: 370.5px;
+        }
+
+        .social-proof-content-2cols {
+          width: 50%;
+          padding: 0 20px;
+        }
+
+        .social-proof-content.left .social-proof-ptext{
+            min-height: 250px;
+        }
+
+        .social-proof-content.right .social-proof-ptext{
+            min-height: 248px;
+        }
+
+        .social-proof.proof2 {
+          padding-bottom: 15%;
+        }
+
+        .social-proof-img-box {
+          height: 185px;
+        }
+
+        .social-proof-img {
+            width: 100%;
+        }
+
+        .btn-learn-more {
+          width: 60% !important;
+        }
+
+        .learnmore-text {
+          font-size: .813rem;
+        }
+
+        /*info-graphics*/
+
+        .info-graphics-proof-content-2cols{
+          width: 50%;  
+        } 
+
+        .info-graphics-proof-content-3cols {
+          width: 33.333%;
+        }
+
+        .info-graphics-proof-content-box {
+          width: 100%;
+          top: -64px;
+          left: 50%;
+          transform: translate(-50%,0);
+        }
+
+        .info-graphics-proof-content{
+            min-height: 20rem;
+        }
+
+        .hexagon-box{
+          top: -84px;
+        }
+
+        .ctrl-width {
+          width: 7.5rem;
+          height: calc(7.5rem * 1.732);
+          margin: 0 3rem;
+        }
+
+
+        .info-graphics-proof-img-box {
+          height: 165px;
+        }
+
+        .info-graphics-proof-title{
+            font-size: 1.2rem;
+        }
+
+        .info-graphics-proof-ptext {
+          font-size: 1.1rem;
+        }
+
+        /*social-pics-proof*/
+
+        .social-pics-proof-background {
+          min-height: 627.75px;
+          height: 627.75px;
+        }
+
+        .social-pics-proof-pics-pad {
+          flex-wrap: wrap;
+        }
+
+        .social-pics-proof-pics-content-2cols {
+           flex: 0 0 auto;
+           width: 50%;
+        }
+
+        .social-pics-proof-pics-content-2cols > div {
+          padding: 1.563rem 0 1.563rem 1.563rem;
+          flex: 0 0 auto;
+          width: 100%;
+          display: flex;
+        }
+
+        .social-pics-proof-pics-box-1 {
+          width: 64.7%;
+        }
+
+        .social-proof-img-2 {
+          object-position: 58%;
+        }
+
+        .social-pics-proof-pics-box-5, .social-pics-proof-pics-box-6 {
+          top: 0.5%;
+        }
+
+        .social-pics-proof-pics-box-5 {
+          left: 4%;
+          width: 49%;
+        }
+
+        .social-pics-proof-pics-box-6 {
+          right: 0;
+          width: 47%;
+        }
+
+
+        .social-pics-proof-pics-box-3 {
+          width: 38.333%;
+        }
+
+        .social-pics-proof-pics-box-4 {
+          width: 61.666%;
+        }
+
+        .social-pics-proof-pics-box-7, .social-pics-proof-pics-box-8 {
+          top: -607.5%;
+          height: 279.38px;
+        }
+
+        .social-pics-proof-pics-box-7 {
+          left: 41.5%;
+          width: 36%;
+        }
+
+        .social-proof-img-7 {
+          object-position: 63%;
+        }
+
+        /*our-partners*/
+        
+        .our-partners {
+          padding: 55px 0 80px;
+        }
+
+        .our-partners-header > h2 {
+          font-size: 1.2rem;
+        }
+
+        .our-partner-logo-box {
+          display: flex;
+        }
+
+         .our-partner-logo-box-content-3cols {
+          flex: 0 0 auto;
+          width: 33.333%;
+        }
+
+
+        .our-partner-logo-box-content-2cols {
+          flex: 0 0 auto;
+          width: 50%;
+        }
+
+        .our-partner-logo-img-box {
+          height: 160px;
+        }
+
+        /*contact-us*/
+        
+        .contact-us-header > h2 {
+          font-size: 1.25rem;
+        }
+
+        .contact-us-content > p {
+          font-size: .875rem;
+        }
+
+        .contact-us {
+          padding: 70px 0 80px;
+        }
+
+        .btn-contact-us {
+          width: 20% !important;
+        }
+
+        /*footer*/
+        footer {
+          min-height: 370.06px;
+        }
+
+        .renewable-energy-footer-brand-box {
+          padding: 0;  
+          height: 105px;
+        }
+
+        .renewable-energy-footer-brand {
+          height: 145px;  
+          max-width: 250px;
+        }
+
+        .social-links {
+          font-size: .875rem;
+          margin: 1rem 0 2rem;
+        }
+
+        .social-links-logo {
+          height: 22px;
+
+        }
+
+        .footer-copyright {
+          font-size: .7rem;
+        }
+
+    }
+
+     /*HD laptops*/
+    @media (min-width: 1366px){
+
+        .social-proof.proof1 > .social-proof-content {
+          max-width: 1115px;
+        }
+
+        .social-proof-container {
+          max-width: 1155px;
+        }
+
+        .social-proof-content.left .social-proof-ptext{
+            min-height: 250px;
+        }
+
+        .social-proof-content.right .social-proof-ptext{
+            min-height: 248px;
+        }
+
+        .social-proof-img {
+            max-width: 639px;
+        }
+
+        /*lg-screen info-graphics*/
+        /*info-graphics*/
+
+        .info-graphics-proof-content-2cols{
+          width: 50%;  
+        } 
+
+        .info-graphics-proof-content-3cols {
+          width: 33.333%;
+        }
+
+        .info-graphics-proof-content-box {
+          width: 100%;
+          top: -64px;
+          left: 50%;
+          transform: translate(-50%,0);
+        }
+
+        .info-graphics-proof-content{
+            min-height: 20rem;
+        }
+
+        .hexagon-box{
+          top: -84px;
+        }
+
+        .ctrl-width {
+          width: 9rem;
+          height: calc(9rem * 1.732);
+          margin: 0 3rem;
+        }
+
+
+        .info-graphics-proof-img-box {
+          height: 165px;
+        }
+
+        .info-graphics-proof-title{
+            font-size: 1.2rem;
+        }
+
+        .info-graphics-proof-ptext {
+          font-size: 1.1rem;
+        }
+
+
+        /*iPad Pro 12 (landscape)*/
+        @media (orientation: landscape){
+
+        }
+    }
+
+    /*bootstrap xxl*/
+    /*xxl devices (large desktops, 1400px and up)*/
+    @media (min-width: 1400px) {
+        
+        .social-proof.proof1 > .social-proof-content {
+          max-width: 1237px;
+        }
+
+        .social-proof-container {
+          max-width: 1237px;
+        }
+
+        .social-proof-img-box {
+          height: 212px;
+        }
+
+        .social-proof-content.left .social-proof-ptext{
+            min-height: 250px;
+        }
+
+        .social-proof-content.right .social-proof-ptext {
+          min-height: 270px;
+        }
+
+
+        /*social-pics-proof*/
+
+        .social-pics-proof-background {
+          min-height: 627.75px;
+          height: 627.75px;
+        }
+
+        .social-pics-proof-pics-pad {
+          flex-wrap: wrap;
+        }
+
+        .social-pics-proof-pics-content-2cols {
+           flex: 0 0 auto;
+           width: 50%;
+        }
+
+        .social-pics-proof-pics-content-2cols > div {
+          padding: 1.563rem 0 1.563rem 1.563rem;
+          flex: 0 0 auto;
+          width: 100%;
+          display: flex;
+        }
+
+        .social-pics-proof-pics-box-1 {
+          width: 64.7%;
+        }
+
+        .social-proof-img-2 {
+          object-position: 58%;
+        }
+
+        .social-pics-proof-pics-box-5, .social-pics-proof-pics-box-6 {
+          top: 0.5%;
+        }
+
+        .social-pics-proof-pics-box-5 {
+          left: 3.5%;
+          width: 49%;
+        }
+
+        .social-pics-proof-pics-box-6 {
+          right: 0;
+          width: 47%;
+        }
+
+
+        .social-pics-proof-pics-box-3 {
+          width: 38.333%;
+        }
+
+        .social-pics-proof-pics-box-4 {
+          width: 61.666%;
+        }
+
+        .social-pics-proof-pics-box-7, .social-pics-proof-pics-box-8 {
+          top: -607.5%;
+          height: 279.38px;
+        }
+
+        .social-pics-proof-pics-box-7 {
+          left: 40.5%;
+          width: 36%;
+        }
+
+        .social-proof-img-7 {
+          object-position: 63%;
+        }
+  
+    }
+
+    /*13" MacBook Pro*/
+    @media (min-width: 1440px) {
+
+    }
+
+
+    /*max-width settings*/
+    @media (max-width: 480px){
+
+    }
+
+    /*container adjustment at md*/
+    @media (max-width: 768px){
+
+        .renewable-energy-container{
+            width: 100%;
+            max-width: 100%;
+        }
+        
+    }
+
+
+}
+
+
+/*btn animation*/
+.pulse {
+  position: relative;
+  box-shadow: 0 0 0 0 #18a75b;
+  background: #18a75b;
+  padding: .5rem .75rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  display: inline-block;
+  color: #fff;
+  border: none;
+  cursor: pointer !important;
+  animation: pulse 2s infinite cubic-bezier(0.66, 0, 0, 1);
+
+}
+
+.pressable{
+    transition-duration: .2s;
+    perspective: 1000px;
+    transform-origin: center bottom 0px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.clicked {
+  transform: matrix(0.95, 0, 0, 0.95, 0, 0);
+}
+
+.pulse:hover {
+    animation: none;
+  }
+
+@keyframes pulse {to {box-shadow: 0 0 0 16px rgba(232, 76, 61, 0);}}
+
+
+
+/*kits*/
+
+.text-left{
+    text-align: left !important;
+}
+
+.text-right{
+    text-align: right !important;
+}
+
+.text-vio{
+   color: rgb(88, 80, 141);
+}
+
+.primary-color{
+   color: #0067F4 !important;
+}
+
+.secondary-color{
+   color: #5A6169 !important;
+}
+
+.success-color{
+   color: #17C671 !important;
+}
+
+.info-color{
+    color: #00B8D8 !important;
+}
+
+.warning-color{
+   color: #FFB400 !important;
+}
+
+.danger-color{
+   color: #C4183C !important;
+}
+
+.light-color{
+   color: #E9ECEF !important;
+}
+
+.dark-color{
+   color: #212529 !important;
+}
+
+.btn-light-green{
+    background: #609966;
+}
+
+.btn-light-green:hover{
+    background: #609966;
+}
+
+.btn-blue-gray, .btn-blue-gray:hover{
+    background: #546c78;
+}
+
+
+.btn-read-more, .btn-learn-more, .btn-contact-us
+{
+    --bs-btn-box-shadow: 0rem 0.0625rem 0.0625rem #1f21241a;
+    padding: 7px 16px;
+    --bs-btn-border-radius: 0 !important;
+}
+
+.btn-read-more, .btn-read-more:hover{
+    border-width: .15rem;
+    width: 30%;
+    --bs-btn-bg: transparent !important;
+    --bs-btn-color: #1C9647 !important;
+    --bs-btn-border-color: #1C9647 !important;
+    --bs-btn-hover-bg: transparent !important;
+    --bs-btn-hover-color: #1C9647 !important;
+    --bs-btn-hover-border-color: #1C9647 !important;
+    --bs-btn-active-bg: transparent !important;
+    --bs-btn-active-color: #1C9647 !important;
+    --bs-btn-active-border-color: #1C9647 !important;
+    --bs-btn-border-radius: 0.1875rem !important;
+}
+
+.btn-learn-more, .btn-learn-more:hover{
+    width: 30%;
+    --bs-btn-bg: rgb(0, 111, 143) !important;
+    --bs-btn-color: #fff !important;
+    --bs-btn-border-color: rgb(0, 111, 143) !important;
+    --bs-btn-hover-bg: rgb(0, 111, 143) !important;
+    --bs-btn-hover-color: #fff !important;
+    --bs-btn-hover-border-color: rgb(0, 111, 143) !important;
+    --bs-btn-active-bg: rgb(0, 111, 143) !important;
+    --bs-btn-active-color: #fff !important;
+    --bs-btn-active-border-color: rgb(0, 111, 143) !important;
+    --bs-btn-border-radius: 0.1875rem !important;
+}
+
+.btn-contact-us, .btn-contact-us:hover{
+    width: 20%;
+    --bs-btn-bg: rgb(0, 111, 143) !important;
+    --bs-btn-color: #fff !important;
+    --bs-btn-border-color: rgb(0, 111, 143) !important;
+    --bs-btn-hover-bg: rgb(0, 111, 143) !important;
+    --bs-btn-hover-color: #fff !important;
+    --bs-btn-hover-border-color: rgb(0, 111, 143) !important;
+    --bs-btn-active-bg: rgb(0, 111, 143) !important;
+    --bs-btn-active-color: #fff !important;
+    --bs-btn-active-border-color: rgb(0, 111, 143) !important;
+    --bs-btn-border-radius: 0.1875rem !important;
+}
+
+.modal {
+    --bs-modal-border-radius: 0 !important;
+}
+
+.card {
+    --bs-card-border-radius: 0 !important;
+}
+
+.border-left-curved{
+    border-top-left-radius: 0.375rem !important;
+    border-bottom-left-radius: 0.375rem !important;
+}
+
+.weight-500{
+   font-weight: 500;
+}
+
+.btn-shadow{
+   box-shadow: 0 1px 4px rgba(0, 0, 0, .6) !important;
+}
+
+.text-shadow {
+   text-shadow: 1px 2px 4px rgba(0,0,0,0.3) !important;
+}
+
+.text-light-shadow{
+ text-shadow: 1px 1px 1px rgba(0,0,0,0.3) !important;
+}
+
+.text-ext-light-shadow {
+    text-shadow: 0px 1px 1px rgba(0,0,0,0.3) !important;
+}
+
+.bitshrink{
+    width:98.9% !important;
+}
+
+.padlft-0{
+    padding-left: 0 !important;
+}
+
+.mr-1{
+    margin-right: 1rem !important;
+}
+
+.ml-1{
+    margin-left: 1rem !important;
+}
+
+
+
+
