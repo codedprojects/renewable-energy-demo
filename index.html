@@ -313,7 +313,11 @@
             });
           }
 
-          const observer = new IntersectionObserver(handleIntersection);
+          let fix_flickering = {
+           threshold: .5
+          }
+
+          const observer = new IntersectionObserver(handleIntersection,fix_flickering);
           observer.observe(target);
         }
 
