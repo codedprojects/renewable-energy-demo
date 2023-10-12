@@ -83,21 +83,86 @@
           <div class="renewable-hydro-content-box">
             <div class="renewable-hydro-content content-1">
                 <h3 class="renewable-hydro-title">Advantages of run of river hydropower Projects</h3>
-                <p class="renewable-hydro-ptext">Run-of-the-river hydropower projects in the Philippines are preferred for their minimal social impact, notably preventing barangay submersion. With less local resistance, they’re a more socially accepted energy solution.
+                <p class="renewable-hydro-ptext">Philippines’ run-of-the-river hydropower: minimal social impact, no barangay submersion, and high social acceptance
                 </p>
             </div>
 
             <div class="renewable-hydro-content content-2">
                 <h3 class="renewable-hydro-title">Enhances the Forest Cover of the Watershed</h3>
-                <p class="renewable-hydro-ptext">The DOE mandates a watershed plan at the end of operations contracts. Hydropower developers naturally aim to conserve forests for water quality and quantity.
+                <p class="renewable-hydro-ptext">DOE requires watershed plans post-contract. Hydropower developers prioritize forest conservation for water quality and quantity
+                </p>
+            </div>
+
+            <div class="renewable-hydro-content content-3">
+                <h3 class="renewable-hydro-title">Saving in CO2 Emissions on a Global Scale</h3>
+                <p class="renewable-hydro-ptext">DOE requires watershed plans post-contract. Hydropower developers prioritize forest conservation for water quality and quantity
+                </p>
+            </div>
+
+            <div class="renewable-hydro-content content-4">
+                <h3 class="renewable-hydro-title">Savings by the Philippine Government from Importation of Oil</h3>
+                <p class="renewable-hydro-ptext">A 1MW mini-hydro plant in the Philippines can save US$500,000 per year in oil imports and is incentivized by the Energy Act of 2008 (RA 9513)
                 </p>
             </div>
           </div>
         </div>
-      
+        <div class="renewable-hydro-btn-box">
+              <a class="btn btn-wanna-know-more know-more-hydro btn-txt shadow-sm pressable" href="https://codedprojects.github.io/repowerenergy-demo/" target="_blank"><span class="wanna-know-more-text">Want to know more? Click here  <i class="mx-1 fa-solid fa-right-long"></i></span></a>
+        </div>
       </div>
-      <div class="renewable-solar"></div>
-      <div class="renewable-wind"></div>
+      <div class="renewable-solar">
+        <div class="renewable-solar-box">
+
+          <div class="renewable-solar-content-box">
+            <div class="renewable-solar-content content-1">
+                <h3 class="renewable-solar-title">Decreased Environmental Impacts</h3>
+                <p class="renewable-solar-ptext">Solar energy is clean, renewable, and sustainable. It does not release greenhouse gases and other harmful pollutants into the atmosphere
+                </p>
+            </div>
+
+            <div class="renewable-solar-content content-2">
+                <h3 class="renewable-solar-title">Economic Benefits</h3>
+                <p class="renewable-solar-ptext">Solar energy is more economical for the Philippines. It can result in reduced utility expenses by 30% to 100%
+                </p>
+            </div>
+          </div>
+
+          <div class="renewable-solar-img-box">
+            <img class="img-fluid renewable-solar-img" src="./public/images/solar.gif"/>
+          </div>
+         
+        </div>
+
+        <div class="renewable-solar-btn-box">
+           <button type="button" class="btn btn-wanna-know-more know-more-solar btn-txt shadow-sm pressable"><span class="wanna-know-more-text">Want to know more? Click here  <i class="mx-1 fa-solid fa-right-long"></i></span></button>
+        </div>
+
+      </div>
+      <div class="renewable-wind">
+          <div class="renewable-wind-box">
+            <div class="renewable-wind-img-box">
+              <img class="img-fluid renewable-wind-img" src="./public/images/wind.gif"/>
+            </div>
+
+            <div class="renewable-wind-content-box">
+              <div class="renewable-wind-content content-1">
+                  <h3 class="renewable-wind-title">Wind Energy Sustainability</h3>
+                  <p class="renewable-wind-ptext">Wind energy is a renewable source that can help reduce the country’s dependence on fossil fuels
+                  </p>
+              </div>
+
+              <div class="renewable-wind-content content-2">
+                  <h3 class="renewable-wind-title">Wind Energy Benefits: Clean Energy</h3>
+                  <p class="renewable-wind-ptext">It does not produce greenhouse gases or air pollutants, contributing to improved air quality
+                  </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="renewable-wind-btn-box">
+           <button type="button" class="btn btn-wanna-know-more know-more-wind btn-txt shadow-sm pressable"><span class="wanna-know-more-text">Want to know more? Click here  <i class="mx-1 fa-solid fa-right-long"></i></span></button>
+          </div>
+      </div>
     </section>
     <!-- <section class="social-proof proof2">
       <div class="social-proof-container">
@@ -229,5 +294,44 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <script>
+      $(function(){
+
+        //animation intersection observer for zoomIn
+        function intersection_observer(target_element,animation){
+
+          const target = document.querySelector(target_element);
+
+          function handleIntersection(entries) {
+            entries.map((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add(animation);
+              } else {
+                entry.target.classList.remove(animation);
+              }
+            });
+          }
+
+          const observer = new IntersectionObserver(handleIntersection);
+          observer.observe(target);
+        }
+
+        intersection_observer(".about-us-img-box","zoomIn");
+        intersection_observer(".renewable-hydro-img-box","zoomIn");
+        intersection_observer(".about-us-content-box","zoomIn");
+        intersection_observer(".btn-read-more","bounce");
+        intersection_observer(".renewable-hydro-content-box","zoomIn");
+        intersection_observer(".btn-wanna-know-more.know-more-hydro","bounce");
+        intersection_observer(".renewable-solar-img-box","zoomIn");
+        intersection_observer(".renewable-solar-content-box","zoomIn");
+        intersection_observer(".btn-wanna-know-more.know-more-solar","bounce");
+        intersection_observer(".renewable-wind-img-box","zoomIn");
+        intersection_observer(".renewable-wind-content-box","zoomIn");
+        intersection_observer(".btn-wanna-know-more.know-more-wind","bounce");
+
+
+      });
+    </script>
 		
 	

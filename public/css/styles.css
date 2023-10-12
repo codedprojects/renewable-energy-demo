@@ -323,7 +323,7 @@ header {
 /*about us*/
 .about-us{
     background: #f3f3f3;
-    height: 567px;
+    height: 770px;
     padding: 50px 5rem;
     display: flex;
     align-items: center;
@@ -368,6 +368,7 @@ header {
 }
 
 /*renewable-energy-category*/
+/*hydro*/
 .renewable-hydro{
    background-image: url('../images/renewable-hydro.jpg'),
    linear-gradient(rgba(36,37,42,.9),rgba(36,37,42,.9));
@@ -378,14 +379,11 @@ header {
    background-size: cover;
    background-position: center 75%;
    background-repeat: no-repeat;
-   height: 555px;
-   display: flex;
-   align-items: center;
+   height: 1045px;
 }
 
 .renewable-hydro-box{
-   flex: 0 0 auto;
-   width: 100%;
+   padding-top: 7rem; 
    display: flex;
    align-items: center;
    max-width: 89%;
@@ -413,18 +411,34 @@ header {
 .renewable-hydro-content{
     color: #fff;
     background: rgb(25, 105, 35);
-    padding: 1.25rem;
-    border-radius: .5rem;
+    clip-path:polygon(5% 0%, 100% 0%, 99% 80%, 95% 100%, 0% 100%, 1% 20%);
+
+    padding-top: 1.9rem;
+    padding-right: 1.9rem;
+    padding-bottom: 1.2rem;
+    padding-left: 2.5rem;
 }
 
 .renewable-hydro-content.content-1{
-    margin-top: .5rem;
-    background: rgb(30, 139, 195);
+    margin-top: 1.1rem;
+    background: rgb(72, 113, 247);
+
+
 }
 
 .renewable-hydro-content.content-2{
     margin-top: 1rem;
-    background: rgb(72, 113, 247);
+    background: rgb(205, 91, 69);
+}
+
+.renewable-hydro-content.content-3{
+    margin-top: 1rem;
+    background: rgb(85, 26, 139);
+}
+
+.renewable-hydro-content.content-4{
+    margin-top: 1rem;
+    background: rgb(70, 130, 300);
 }
 
 .renewable-hydro-title {
@@ -434,12 +448,181 @@ header {
 }
 
 .renewable-hydro-ptext {
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-align: justify;
-    font-size: 1rem;
+    font-size: 1.09rem;
     line-height: 1.5;
 }
 
+.renewable-hydro-btn-box{
+    padding-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wanna-know-more-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+
+/*solar*/
+.renewable-solar{
+   background-image: url('../images/renewable-solar.jpg'),
+   linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1));
+   background-blend-mode: overlay;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   height: 877px;
+
+}
+
+.renewable-solar-box{
+   padding-top: 17rem; 
+   display: flex;
+   align-items: center;
+   max-width: 89%;
+   margin: 0 auto;
+}
+
+.renewable-solar-img-box{
+    flex: 0 0 auto;
+    width: 40%;
+    height: 350px;
+}
+
+.renewable-solar-img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.renewable-solar-content-box{
+    flex: 0 0 auto;
+    width: 60%;
+    min-height: 350px;
+}
+
+.renewable-solar-content{
+    color: #fff;
+    background: rgb(25, 105, 35);
+    padding: 1.2rem;
+/*    border-radius: .5rem;*/
+    max-width: 90%;
+}
+
+.renewable-solar-content.content-1{
+    margin-top: 1.1rem;
+    background: rgb(89, 65, 87);
+}
+
+.renewable-solar-content.content-2{
+    margin-top: 1rem;
+    background: rgb(62, 81, 122);
+}
+
+.renewable-solar-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+}
+
+.renewable-solar-ptext {
+    letter-spacing: 1px;
+    text-align: justify;
+    font-size: 1.09rem;
+    line-height: 1.5;
+}
+
+.renewable-solar-btn-box{
+    padding-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*wind*/
+.renewable-wind{
+   background-image: url('../images/renewable-wind.jpg'),
+   linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1));
+   background-blend-mode: overlay;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   background-position: center 75%;
+   background-repeat: no-repeat;
+   height: 820px;
+}
+
+.renewable-wind-box{
+   display: flex;
+   align-items: center;
+   max-width: 89%;
+   margin: 0 auto;
+}
+
+.renewable-wind-img-box{
+    flex: 0 0 auto;
+    width: 50%;
+    height: 665px;
+    margin-right: 3rem;
+}
+
+.renewable-wind-img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.renewable-wind-content-box{
+    flex: 0 0 auto;
+    width: 50%;
+    min-height: 350px;
+}
+
+.renewable-wind-content{
+    color: #fff;
+    background: rgb(25, 105, 35);
+    padding: 1.2rem;
+/*    border-radius: .5rem;*/
+    max-width: 90%;
+}
+
+.renewable-wind-content.content-1{
+    margin-top: 1.1rem;
+    background: rgb(46, 83, 57);
+}
+
+.renewable-wind-content.content-2{
+    margin-top: 1.9rem;
+    background: rgb(19, 111, 99);
+}
+
+
+.renewable-wind-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+}
+
+.renewable-wind-ptext {
+    letter-spacing: 1px;
+    text-align: justify;
+    font-size: 1.09rem;
+    line-height: 1.5;
+}
+
+.renewable-wind-btn-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 /*------------------*/
@@ -2690,7 +2873,7 @@ header {
 }
 
 
-.btn-read-more, .btn-learn-more, .btn-contact-us
+.btn-read-more, .btn-wanna-know-more, .btn-learn-more, .btn-contact-us
 {
     --bs-btn-box-shadow: 0rem 0.0625rem 0.0625rem #1f21241a;
     padding: 7px 16px;
@@ -2709,8 +2892,54 @@ header {
     --bs-btn-active-bg: transparent !important;
     --bs-btn-active-color: #1C9647 !important;
     --bs-btn-active-border-color: #1C9647 !important;
+/*    --bs-btn-border-radius: 0.1875rem !important;*/
+}
+
+.btn-wanna-know-more, .btn-wanna-know-more:hover{
+    border-width: .15rem;
+    width: 25%;
+    padding: 1rem;
+}
+
+.btn-wanna-know-more.know-more-hydro{
+    --bs-btn-bg: #2A7F62 !important;
+    --bs-btn-color: #fff !important;
+    --bs-btn-border-color: #2A7F62 !important;
+    --bs-btn-hover-bg: #44BBA4 !important;
+    --bs-btn-hover-color: #fff !important;
+    --bs-btn-hover-border-color: #44BBA4 !important;
+    --bs-btn-active-bg: #2A7F62 !important;
+    --bs-btn-active-color: #fff !important;
+    --bs-btn-active-border-color: #2A7F62 !important;
+/*    --bs-btn-border-radius: 0.1875rem !important;*/
+}
+
+.btn-wanna-know-more.know-more-solar{
+    --bs-btn-bg: #DC6C04 !important;
+    --bs-btn-color: #fff !important;
+    --bs-btn-border-color: #DC6C04 !important;
+    --bs-btn-hover-bg: #E77D1A !important;
+    --bs-btn-hover-color: #fff !important;
+    --bs-btn-hover-border-color: #E77D1A !important;
+    --bs-btn-active-bg: #DC6C04 !important;
+    --bs-btn-active-color: #fff !important;
+    --bs-btn-active-border-color: #DC6C04 !important;
     --bs-btn-border-radius: 0.1875rem !important;
 }
+
+.btn-wanna-know-more.know-more-wind{
+    --bs-btn-bg: #264AB4 !important;
+    --bs-btn-color: #fff !important;
+    --bs-btn-border-color: #264AB4 !important;
+    --bs-btn-hover-bg: #2D55CE !important;
+    --bs-btn-hover-color: #fff !important;
+    --bs-btn-hover-border-color: #2D55CE !important;
+    --bs-btn-active-bg: #264AB4 !important;
+    --bs-btn-active-color: #fff !important;
+    --bs-btn-active-border-color: #264AB4 !important;
+/*    --bs-btn-border-radius: 0.1875rem !important;*/
+}
+
 
 .btn-learn-more, .btn-learn-more:hover{
     width: 30%;
@@ -2788,6 +3017,97 @@ header {
 .ml-1{
     margin-left: 1rem !important;
 }
+
+/*animations*/
+/*zoomIn*/
+ .zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes zoomIn {
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  50% {
+  opacity: 1;
+  }
+  }
+  @keyframes zoomIn {
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  50% {
+  opacity: 1;
+  }
+} 
+
+/*bounce*/
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  transform-origin: center bottom;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes bounce {
+  0%, 20%, 53%, 80%, 100% {
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  }
+  40%, 43% {
+  -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  -webkit-transform: translate3d(0, -30px, 0);
+  transform: translate3d(0, -30px, 0);
+  }
+  70% {
+  -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  -webkit-transform: translate3d(0, -15px, 0);
+  transform: translate3d(0, -15px, 0);
+  }
+  90% {
+  -webkit-transform: translate3d(0,-4px,0);
+  transform: translate3d(0,-4px,0);
+  }
+  }
+  
+  @keyframes bounce {
+  0%, 20%, 53%, 80%, 100% {
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  }
+  40%, 43% {
+  -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  -webkit-transform: translate3d(0, -30px, 0);
+  transform: translate3d(0, -30px, 0);
+  }
+  70% {
+  -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  -webkit-transform: translate3d(0, -15px, 0);
+  transform: translate3d(0, -15px, 0);
+  }
+  90% { -webkit-transform: translate3d(0,-4px,0); transform: translate3d(0,-4px,0);
+  }
+  } 
 
 
 
