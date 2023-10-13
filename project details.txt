@@ -11,3 +11,11 @@ for hydro, solar, wind:
 https://aboitiz.com/
 https://aboitizpower.com/
 isolutions.com.ph
+
+Demo links:
+landing page:
+https://codedprojects.github.io/renewable-energy-demo/
+
+repowerenergy page (hydro):
+https://codedprojects.github.io/repowerenergy-demo/
+
