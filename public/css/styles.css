@@ -179,7 +179,7 @@ header {
     top: 0;
     z-index: 999;
     width: 100%;
-     
+    
     background: rgba(255,255,255,1);
     height: 72.56px;
     padding: 0 20px 0;
@@ -189,7 +189,7 @@ header {
 }
 
 .renewable-energy-brand{
-    height: 97px;
+    height: 87px;
     max-width: 272.08px;
 }
 
@@ -698,7 +698,7 @@ header {
 
         /*xs-screen navbar*/
         #renewable-energy-navbar {
-          padding: 0 .5rem;
+          padding: 0;
           height: 90px;
           margin-bottom: 0;
         }
@@ -942,6 +942,7 @@ header {
 
         .contact-us-details {
           display: block;
+          padding-right: 2rem;
         }
 
         .contact-us-details > li {
@@ -1012,6 +1013,14 @@ header {
             font-size: 1.7rem;
         }
 
+        .renewable-hydro {
+          height: 1506px;
+        }
+
+        .renewable-solar {
+          height: 910px;
+        }
+
 
 
         /*LG Nexus 5 (portrait)*/
@@ -1044,6 +1053,18 @@ header {
 
         .header-cover-title {
             font-size: 1.5rem;
+        }
+
+        .renewable-hydro {
+          height: 1455px;
+        }
+
+        .renewable-solar {
+          height: 905px;
+        }
+
+        .renewable-wind {
+          height: 865px;
         }
 
 
@@ -1093,6 +1114,10 @@ header {
 
         .header-cover-title {
             font-size: 1.7rem;
+        }
+
+        .about-us-box {
+          margin-top: 20px;
         }
 
         .about-us-content-box {
@@ -1187,16 +1212,8 @@ header {
 
         /*xs-screen home*/
         /*head-cover*/
-        .header-cover-pic {
-          height: 680px;
-        }
-
-        .header-cover-title-box {
-          bottom: 14.5rem;
-        }
-
-        .header-cover-title {
-            font-size: 1.7rem;
+        .header-cover-video {
+          top: 89px;
         }
 
         .about-us-img-box {
@@ -1611,6 +1628,10 @@ header {
     @media (min-width: 992px) {
 
         /*lg-screen navbar*/
+        #renewable-energy-navbar {
+          padding: 0 .5rem;
+        }
+
         #renewable-energy-burger-menu {
           margin-left: 0;
         }
