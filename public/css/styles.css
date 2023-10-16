@@ -620,7 +620,7 @@ header {
 /*contact us*/
 .contact-us{
     height: 333px;
-    background: #E0E0E0;
+    background: #f8f8f8;
     border-bottom: 1px solid rgba(255,255,255,.1)
 }
 
@@ -698,7 +698,7 @@ header {
 
         /*xs-screen navbar*/
         #renewable-energy-navbar {
-          padding: 0;
+          padding: 0 .5rem;
           height: 90px;
           margin-bottom: 0;
         }
@@ -712,7 +712,8 @@ header {
         }
 
         #renewable-energy-navMenuCollapse > ul {
-            background: rgba(255,255,255,0.8);
+            margin-top: -8px;
+            background: #fff;
         }
 
         .fa-solid.fa-chevron-down{
@@ -723,48 +724,246 @@ header {
         #renewable-energy-navMenuCollapse > ul > li.nav-item > div{
             font-size: .9rem;
         }
+
+        .renewable-energy-brand {
+          max-width: 185.08px;
+        }
   
         /*xs-screen home*/
         /*head-cover*/
-        .header-cover-title {
-            font-size: 2.3rem;
+        .header-cover-video-box {
+          height: 272px;
         }
 
-        .header-cover-pic {
-          height: 640px;
+        .header-cover-video {
+          top: 90px;
         }
 
-        .header-cover-title-box {
-          bottom: 9rem;
+        /*about-us*/
+
+        .about-us {
+          height: 675px;
+          padding: 20px 1.5rem;
         }
+
+        .about-us-box {
+          display: block;
+        }
+
+        .about-us-img-box {
+          margin-top: -40px;  
+          width: 100%;
+          height: 240px;
+        }
+
+        .about-us-content-box {
+          padding: 0;
+        }
+
+        .about-us-title-head {
+          font-size: 1.4rem;
+        }
+
+        .about-us-ptext {
+          font-size: .875rem;
+          line-height: 1.6;
+        }
+
+        .btn-read-more, .btn-read-more:hover {
+          width: 50% !important;
+        }
+
+        .renewable-hydro {
+          height: 1570px;
+        }
+
+        .renewable-hydro-box {
+          padding-top: 0;
+          display: block;
+        }
+
+        .renewable-hydro-img-box {
+          width: 75%;
+          height: 285px;
+          margin: 0 auto;
+        }
+
+        .renewable-hydro-content-box {
+          width: 90%;
+          min-height: 350px;
+          margin: 0 auto;
+        }
+
+        .renewable-hydro-title {
+          font-size: 1.2rem;
+        }
+
+        .renewable-hydro-ptext {
+          letter-spacing: 1px;
+          text-align: left;
+          font-size: .938rem;
+          line-height: 1.5;
+        }
+
+        .renewable-hydro-content {
+          padding-top: 1.2rem;
+          padding-right: 1.2rem;
+          padding-bottom: 1rem;
+          padding-left: 2rem;
+        }
+
+        .renewable-hydro-btn-box {
+          padding-top: 2rem;
+        }
+
+        .btn-wanna-know-more, .btn-wanna-know-more:hover {
+          width: 80% !important;
+          padding: .5rem;
+        }
+
+        .wanna-know-more-text {
+          font-size: 1rem;
+        }
+
+        .click-here-txt {
+            display: none;
+        }
+
+        .renewable-wind {
+          height: 915px;
+        }
+
+        .renewable-solar {
+          height: 1000px;
+        }
+
+        .renewable-solar-box {
+          padding-top: 2rem;
+          display: block;
+        }
+
+        .renewable-solar-content {
+          margin: 0 auto;
+        }
+
+        .renewable-solar-content-box {
+          width: 100%;
+        }
+
+        .renewable-solar-title {
+          font-size: 1.2rem;
+        }
+
+        .renewable-solar-ptext {
+          text-align: left;
+          font-size: .938rem;
+        }
+
+        .renewable-solar-img-box {
+          width: 75%;
+          height: 285px;
+          margin: 0 auto;
+        }
+
+        .renewable-solar-btn-box {
+          padding-top: 0;
+        }
+
+        .renewable-wind-box {
+          display: block;
+        }
+
+        .renewable-wind-img-box {
+          width: 90%;
+          height: 285px;
+          margin-right: 0;
+          margin: 0 auto;
+        }
+
+        .renewable-wind-content-box {
+          width: 100%;
+        }
+
+        .renewable-wind-content{
+          margin: 0 auto;
+        }
+
+        .renewable-wind-title {
+          font-size: 1.2rem;
+        }
+
+        .renewable-wind-ptext {
+          text-align: left;
+          font-size: .938rem;
+        }
+
+        .renewable-wind-btn-box {
+          margin-top: 50px;
+        }
+
+
 
         
         /*contact-us*/
+        .contact-us {
+          height: 700px;
+        }
+
+        .contact-us-container {
+          display: block;
+        }
+
+        .contact-us-col-left{
+            width: 100%;
+        }
+
+        .nexgen-energy-footer-brand-box {
+          height: 127px;
+        }
+
+        .nexgen-energy-footer-brand {
+          height: 97px;
+          max-width: 250px;
+          display: block;
+          margin: 0 auto;
+        }
+
+        .contact-us-col-right {
+          width: 100%;
+        }
         
         .contact-us-header > h2 {
-          font-size: 1.25rem;
+          font-size: 1.2rem;
+        }
+
+        .contact-us-content {
+          padding-left: 2rem;
+        }
+
+        .contact-us-details {
+          display: block;
+        }
+
+        .contact-us-details > li {
+          width: 100%;
         }
 
 
         /*footer*/
         footer {
-          min-height: 370.06px;
+          min-height: 165.06px;
         }
 
-        .renewable-energy-footer-brand-box {
-          padding: 0;  
-          height: 105px;
+        .footer-container {
+          align-items: center;
         }
 
-        .renewable-energy-footer-brand {
-          height: 145px;  
-          max-width: 250px;
-        }
 
         .footer-copyright {
           display: block;
           font-size: .55rem;
           text-align: center;
+          margin-bottom: 0;
         }
 
         ul.footer-copyright > li {
@@ -896,6 +1095,27 @@ header {
             font-size: 1.7rem;
         }
 
+        .about-us-content-box {
+          margin-top: 1rem;
+        }
+
+        .about-us-content-box {
+          margin-top: 1rem;
+          padding: 0 .5rem;
+        }
+
+        .renewable-hydro {
+          height: 1350px;
+        }
+
+        .renewable-solar {
+          height: 875px;
+        }
+
+        .renewable-wind {
+          height: 860px;
+        }
+
 
         /*iPhone 6 Plus (portrait)*/
         @media (max-width: 736px){
@@ -918,6 +1138,23 @@ header {
         .header-cover-title {
             font-size: 1.5rem;
         }
+
+        .about-us-title-head {
+          margin-top: 2rem;
+        }
+
+        .renewable-hydro {
+          height: 1290px;
+        }
+
+        .renewable-solar {
+          height: 827px;
+        }
+
+        .renewable-wind {
+          height: 837px;
+        }
+
 
 
         /*iPhone 3G/iPhone 4 (landscape)*/
@@ -962,6 +1199,34 @@ header {
             font-size: 1.7rem;
         }
 
+        .about-us-img-box {
+          margin-top: 5px;
+          width: 100%;
+          height: 270px;
+        }
+
+
+        .renewable-hydro {
+          height: 1245px;
+        }
+
+        .renewable-hydro-box {
+          padding-top: 2rem;
+        }
+
+        .renewable-solar {
+          height: 822px;
+        }
+
+        .renewable-wind {
+          padding-top: 2rem;  
+          height: 850px;
+        }
+
+        .footer-copyright {
+          font-size: .625rem;
+        }
+
 
         /*Samsung Galaxy S2 (landscape)*/
         @media (orientation: landscape){
@@ -971,6 +1236,48 @@ header {
 
 
     @media (min-width: 568px){
+
+        .renewable-energy-brand {
+          max-width: 225.08px;
+        }
+
+        .about-us {
+          height: 710px;
+        }
+
+
+        .about-us-img-box {
+          margin-top: 0;
+          height: 287px;
+        }
+
+        .about-us-ptext {
+          font-size: .938rem;
+        }
+
+        .renewable-hydro-box {
+          padding-top: 1.5rem;
+        }
+
+        .renewable-hydro-ptext {
+          font-size: 1rem;
+        }
+
+        .renewable-solar {
+          height: 815px;
+        }
+
+        .renewable-solar-ptext {
+          font-size: 1rem;
+        }
+
+        .renewable-wind-box {
+          padding-top: 1.5rem;
+        }
+
+        .renewable-wind-ptext {
+          font-size: 1rem;
+        }
 
         /*iPhone 5/iPhone SE (landscape)*/
         @media (orientation: landscape) {
@@ -982,6 +1289,13 @@ header {
     /*sm devices (landscape phones, 576px and up*/
     @media (min-width: 576px) {
 
+        .renewable-solar {
+          height: 810px;
+        }
+
+        .renewable-wind {
+          height: 867px;
+        }
 
     }
 
@@ -1001,6 +1315,21 @@ header {
     
     @media (min-width: 601px){
 
+        .header-cover-video-box {
+          height: 430px;
+        }
+
+        .about-us-img-box {
+          height: 310px;
+        }
+
+        .renewable-hydro-box {
+          padding-top: 2.5rem;
+        }
+
+        .renewable-solar-box {
+          padding-top: 2.5rem;
+        }
 
         /*Asus Nexus 7 (portrait)*/
         @media (max-width: 906px){
@@ -1011,7 +1340,23 @@ header {
     @media (min-width: 640px){
 
         /*xs-screen home*/
-        
+
+        .header-cover-video-box {
+          height: 450px;
+        }
+
+        .about-us {
+          height: 752px;
+        }
+
+        .about-us-img-box {
+          height: 325px;
+        }
+
+        .about-us-content-box {
+          padding: 0 1rem;
+        }
+            
 
         /*Samsung Galaxy S3/S4 (landscape)*/
         @media (orientation: landscape){
@@ -1032,6 +1377,9 @@ header {
    
     @media (min-width: 667px) {
 
+        .header-cover-video-box {
+          height: 465px;
+        }
         
 
         /*iPhone 6, 7, 8, X (landscape)*/
@@ -1043,6 +1391,78 @@ header {
    
     @media (min-width: 736px){
 
+        .header-cover-video-box {
+          height: 505px;
+        }
+
+        .about-us {
+          height: 820px;
+        }
+
+        .about-us-img-box {
+          height: 360px;
+        }
+
+        .about-us-content-box {
+          padding: 0 2rem;
+        }
+
+        .about-us-title-head {
+          margin-top: 3.5rem;
+        }
+
+        .about-us-ptext {
+          min-height: 200px;
+          margin-top: 20px;
+        }
+
+        .btn-read-more, .btn-read-more:hover {
+          width: 30% !important;
+        }
+
+        .renewable-hydro-content.content-1 {
+          margin-top: 3.1rem;
+        }
+
+        .renewable-hydro-btn-box {
+          padding-top: 4rem;
+        }
+
+        .btn-wanna-know-more, .btn-wanna-know-more:hover {
+          width: 30% !important;
+        }
+
+
+        .renewable-solar-box {
+          padding-top: 3.5rem;
+        }
+
+        .renewable-solar-btn-box {
+          padding-top: 2rem;
+        }
+
+        .renewable-solar {
+          height: 860px;
+        }
+
+
+        .renewable-wind-box {
+          padding-top: 2.5rem;
+        }
+
+        .renewable-wind-img-box {
+          height: 295px;
+        }
+
+        .renewable-wind {
+          height: 887px;
+        }
+
+        .contact-us-content {
+          padding-left: 4rem;
+        }
+                               
+
         /*iPhone 6 Plus (landscape)*/
         @media (orientation: landscape){
 
@@ -1052,6 +1472,72 @@ header {
     /*bootstrap md*/
     /*md devices (tablets, 768px and up)*/
     @media (min-width: 768px) {
+
+        .header-cover-video-box {
+          height: 525px;
+        }
+
+        .header-cover-video {
+          top: 89px;
+        }
+
+        .about-us {
+          height: 915px;
+        }
+
+        .about-us-img-box {
+          height: 360px;
+        }
+
+        .about-us-content-box {
+          padding: 0 2.9rem;
+        }
+
+        .about-us-ptext {
+          font-size: 1.125rem;
+        }
+
+        .renewable-hydro {
+          height: 1290px;
+        }
+
+        .renewable-hydro-box {
+          padding-top: 3.5rem;
+        }
+
+        .renewable-hydro-ptext {
+          font-size: 1.125rem;
+        }
+
+        .renewable-solar-content {
+          padding: 1.2rem 3.2rem 1.2rem 1.2rem;
+        }
+
+        .renewable-solar-ptext {
+          font-size: 1.125rem;
+        }
+
+        .renewable-wind {
+          height: 935px;
+        }
+
+        .renewable-wind-box {
+          padding-top: 3.5rem;
+        }
+
+        .renewable-wind-img-box {
+          height: 307px;
+        }
+
+        .renewable-wind-ptext {
+          font-size: 1.125rem;
+        }
+
+        .contact-us-content {
+          padding-left: 4.8rem;
+        }
+
+
 
 
             /*iPad 1 and 2/iPad Air, 
@@ -1064,6 +1550,9 @@ header {
    
     @media (min-width: 834px){
 
+        .header-cover-video-box {
+          height: 560px;
+        }
 
         /*iPad Pro 10 (portrait)*/
         @media (max-width: 1112px){
@@ -1073,6 +1562,40 @@ header {
 
     
     @media (min-width: 906px){
+
+        .header-cover-video-box {
+          height: 600px;
+        }
+
+        .about-us-box {
+          margin-top: 10px;
+        }
+
+        .about-us-img-box {
+          height: 440px;
+        }
+
+        .renewable-hydro {
+          height: 1217px;
+        }
+
+        .renewable-wind {
+          height: 975px;
+        }
+
+        .renewable-wind-content-box {
+          width: 90%;
+          margin: 2rem auto;
+        }
+
+        .renewable-wind-img-box {
+          height: 325px;
+        }
+
+        .contact-us-content {
+          padding-left: 8.8rem;
+        }
+
 
 
         /*Asus Nexus 7 (landscape)*/
@@ -1110,7 +1633,7 @@ header {
 
         /*lg-screen navbar*/
         #renewable-energy-navMenuCollapse > ul > li.nav-item > a {
-          font-size: .75rem;
+          font-size: 1rem;
           font-weight: 600;
         }
 
@@ -1125,21 +1648,153 @@ header {
         /*lg-screen main*/
         
         /*lg-screen home*/
-        .header-cover-pic {
-          height: 900px;
+        .renewable-energy-brand {
+          max-width: 272.08px;
         }
 
-        .header-cover-title-box {
-          bottom: 22rem;
+        .header-cover-video-box {
+          height: 645px;
         }
 
-        .header-cover-title {
-          font-size: 2.375rem;
+        .about-us {
+          height: 625px;
+          padding: 50px 4rem;
+        }
+
+        .about-us-box {
+          display: flex;
+        }
+
+        .about-us-img-box {
+          width: 47%;
+          height: 350px;
+        }
+
+        .about-us-content-box {
+          margin-top: 0;  
+          padding: 0 0 0 2.9rem;
+        }
+
+        .about-us-title-head {
+          margin-top: 0;
+        }
+
+        .about-us-ptext {
+          font-size: 1.188rem;
+        }
+
+        .wanna-know-more-text {
+          font-size: 1.1rem;
+        }
+
+        .renewable-hydro {
+          height: 1157px;
+        }
+
+        .renewable-hydro-box {
+          padding-top: 4rem;
+          display: flex;
+        }
+
+        .renewable-hydro-img-box {
+          width: 40%;
+          height: 275px;
+        }
+
+        .renewable-hydro-content-box {
+          width: 60%;
+          min-height: 350px;
+          padding-left: 2rem;
+          padding-right: 1.5rem;
+        }
+
+        .renewable-solar {
+          height: 700px;
+        }
+
+        .renewable-solar-box {
+          padding-top: 5rem;
+        }
+
+        .renewable-solar-box {
+          padding-top: 17rem;
+          display: flex;
+        }
+
+        .renewable-solar-content-box {
+          width: 60%;
+        }
+
+        .renewable-solar-box {
+          padding-top: 4rem;
+          display: flex;
+        }
+
+        .renewable-solar-img-box {
+          width: 40%;
+          height: 350px;
+        }
+
+        .renewable-solar-btn-box {
+          padding-top: 4rem;
+        }
+
+        .renewable-wind {
+          height: 735px;
+        }
+
+        .renewable-wind-box {
+          display: flex;
+          padding-top: 1.5rem;
+        }
+
+        .renewable-wind-img-box {
+          width: 50%;
+          height: 205px;
+          margin-right: 1.5rem;
+        }
+
+        .renewable-wind-content-box {
+          width: 50%;
+          min-height: 350px;
+        }
+
+        .btn-wanna-know-more, .btn-wanna-know-more:hover {
+          width: 25% !important;
         }
 
        
         /*contact-us*/
         
+        .contact-us-container {
+          max-width: 1210px;
+          padding: 50px 4rem;
+          display: flex;
+        }
+
+        .contact-us-col-left {
+          width: 33.33333333%;
+        }
+
+        .nexgen-energy-footer-brand {
+          height: 145px;
+          max-width: 250px;
+          margin:unset;
+          display: unset;
+        }
+
+        .nexgen-energy-footer-brand-box {
+          height: 137px;
+        }
+
+        .contact-us-col-right {
+          width: 66.66666667%;
+        }
+
+        .contact-us-content {
+          padding-left: 5.25rem;
+        }
+
         .contact-us-header > h2 {
           font-size: 1.25rem;
         }
@@ -1147,22 +1802,12 @@ header {
 
         /*footer*/
         footer {
-          min-height: 370.06px;
-        }
-
-        .renewable-energy-footer-brand-box {
-          padding: 0;  
-          height: 105px;
-        }
-
-        .renewable-energy-footer-brand {
-          height: 145px;  
-          max-width: 250px;
+          min-height: 70.06px;
         }
 
         .footer-copyright {
           display: flex;
-          font-size: .55rem;
+          font-size: .7rem;
           text-align: center;
         }
 
@@ -1181,8 +1826,12 @@ header {
     @media (min-width: 1024px){
 
         /*lg-screen navbar*/
-        #renewable-energy-navMenuCollapse > ul > li.nav-item > a{
-            font-size: .78rem;
+        #renewable-energy-navMenuCollapse > ul > li.nav-item > a {
+          font-size: 1rem;
+        }
+
+        .header-cover-video-box {
+          height: 667px;
         }
 
 
@@ -1231,21 +1880,30 @@ header {
         }
         
         /*lg-screen home*/
-        .header-cover-pic {
-          height: 900px;
+        .header-cover-video-box {
+          height: 765px;
         }
 
-        .header-cover-title-box {
-          bottom: 22rem;
-        }
-
-        .header-cover-title {
-          font-size: 2.375rem;
-        }
 
         /*about-us*/
         .readmore-text {
           font-size: 1rem;
+        }
+
+        .renewable-hydro {
+          height: 1085px;
+        }
+
+        .renewable-solar {
+          height: 660px;
+        }
+
+        .renewable-wind {
+          height: 700px;
+        }
+
+        .btn-wanna-know-more, .btn-wanna-know-more:hover {
+          width: 20% !important;
         }
 
 
@@ -1289,6 +1947,17 @@ header {
      /*HD laptops*/
     @media (min-width: 1366px){
 
+        .renewable-hydro {
+          height: 995px;
+        }
+
+        .renewable-solar {
+          height: 660px;
+        }
+
+        .btn-wanna-know-more, .btn-wanna-know-more:hover {
+          width: 20% !important;
+        }
 
         /*iPad Pro 12 (landscape)*/
         @media (orientation: landscape){
@@ -1300,11 +1969,25 @@ header {
     /*xxl devices (large desktops, 1400px and up)*/
     @media (min-width: 1400px) {
         
+        .header-cover-video-box {
+          height: 890px;
+        }
+
+        .renewable-solar-box {
+          padding-top: 6rem;
+        }
+
+        .btn-wanna-know-more, .btn-wanna-know-more:hover {
+          width: 20% !important;
+        }
+
     }
 
     /*13" MacBook Pro*/
     @media (min-width: 1440px) {
-
+        .header-cover-video-box {
+          height: 890px;
+        }
     }
 
 
@@ -1474,7 +2157,7 @@ header {
     --bs-btn-active-bg: #DC6C04 !important;
     --bs-btn-active-color: #fff !important;
     --bs-btn-active-border-color: #DC6C04 !important;
-    --bs-btn-border-radius: 0.1875rem !important;
+/*    --bs-btn-border-radius: 0.1875rem !important;*/
 }
 
 .btn-wanna-know-more.know-more-wind{
