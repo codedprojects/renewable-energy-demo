@@ -59,7 +59,7 @@
   <main>
     <section class="header-cover">
       <div class="header-cover-video-box">
-        <video id="header-cover-video" class="header-cover-video" autoplay muted loop controls playsinline>
+        <video id="header-cover-video" class="header-cover-video" autoplay muted loop controls="false" playsinline>
         <source src="./public/media/Renewable Energy - BG (enhanced).mp4" type="video/mp4">
         </video>
       </div>
@@ -277,6 +277,7 @@
         intersection_observer(".renewable-wind-content-box","zoomIn");
         intersection_observer(".btn-wanna-know-more.know-more-wind","bounce");
 
+        document.getElementById("header-cover-video").controls = false;
 
       });
     </script>
