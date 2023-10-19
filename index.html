@@ -241,6 +241,25 @@
     <script>
       $(function(){
 
+        //btn animation
+        $(document.body).on("mousedown",".pressable",function(){
+          //console.log("pressed");
+            $(this).addClass("clicked");
+        });
+
+         $(document.body).on("mouseup",".pressable",function(){
+           //console.log("unpressed");
+            $(this).removeClass("clicked");
+        });
+
+         $(document.body).on("tap",".pressable",function(){
+            $(this).removeClass("clicked");
+        });
+
+        $(document.body).on("mouseout",".pressable",function(){
+            $(this).removeClass("clicked");
+        });
+
         //animation intersection observer for zoomIn
         function intersection_observer(target_element,animation){
 
